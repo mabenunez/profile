@@ -1,0 +1,51 @@
+
+
+
+body {
+    margin: 0;
+    font-family: opensans;
+
+}
+header {
+    background-color: rgb(160, 0, 27);
+    height: 40vh;
+    position: relative;
+    .name {
+        position: absolute;
+        left: 10%;
+        top: 6%;
+        color: white;
+        h1{
+            margin: 5px 5px 0 0 ;
+            font-weight: 300;
+        }
+        p {
+            margin: 5px 5px 0 0 ;
+        }
+    }
+}
+.profile {
+    height: 50vh;
+    width: 80%;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    left: 10%;
+    top: 40%;
+    display: flex;
+    .photo {
+        width: 35%;
+        height: 100%;
+        img {
+           width: 100%; 
+        }
+    }
+}
+.container-dos {
+    width: 80%;
+    margin-top: 35vh;
+    margin-left: 10%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
