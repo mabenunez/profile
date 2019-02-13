@@ -10,31 +10,29 @@ header {
     position: absolute;
     top: 0;
 }
-.header__name-cont--big {
-    display: none;
-    h1 {
-        margin: 0;
-        padding: 20px;
-        color: white;
-        text-align: center;
-    }
-}
-.header__name-cont--small {
-    h2 {
-        text-align: center;
-    }
-}
 .header__profile-info-cont {
+    display: flex;
+    flex-direction: column;
     width: 90vw;
     margin: 0px auto;
     padding: 0;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
 }
+.bio-cont__name-cont--small {
+    h1 {
+        text-align: center;
+        margin-top: 5px;
+    }
+}
+.bio-cont__subtitle {
+    text-align: center;
+    font-size: 18px;
+    font-weight: normal;
+}
 .profile-info__avatar {
     width: 50%;
-    margin: 20px auto;
-    position: relative;
+    margin: 20px auto 10px auto;
     img {
         width: 100%;
         margin: 30px auto 10px auto;
@@ -42,18 +40,56 @@ header {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
     }
 }
-
+.bio-cont__description {
+    text-align: center;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.profile-info__bio-cont {
+    margin-bottom: 20px;
+}
+@media (min-width: 900px) {
+    header {
+        // position: relative;
+    }
+    .header__profile-info-cont {
+        display: flex;
+        flex-direction: row;
+        width: 80vw;
+        margin: 30px auto;
+        padding: 0;
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+    }
+    .profile-info__avatar {
+        width: 33.333%;
+        margin: 0px 0;
+        img {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            border-radius: 0;
+            box-shadow: none; 
+        }
+    }
+    .profile-info__bio-cont {
+        width: 60%;
+        margin: auto;
+    }
+}
 /* 
     <header>
-        <div class="header__name-cont">
+        <div class="header__name-cont--big">
             <h1>María Núñez</h1>
         </div>
         <div class="header__profile-info-cont" >
             <div class="profile-info__avatar">
-                <img src="https://avatars1.githubusercontent.com/u/39781996?v=4" alt="github-account-avatar">
             </div>
             <div class="profile-info__bio-cont">
-                <h2>Esta es una muestra de mi Github</h2>
+                <div class="bio-cont__name-cont--small">
+                    <h2>María Núñez</h2>
+                </div>
+                <h2 class="bio-cont__subtitle">Esta es una muestra de mi Github</h2>
                 <h3></h3>
                 <hr>
                 <p>Website: <span id="website-url"></span></p>

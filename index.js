@@ -2,7 +2,9 @@ $.ajax(
     "https://api.github.com/users/mabenunez"
   ).done(function(data) {
     $('.profile-info__avatar').append(`<img src='${data.avatar_url}' alt='github-account-avatar'/>`)
-    $('#website').html(`https://"${data.blog}"`)
+    if (`${data.blog}` != "") {
+      $(".profile-info__bio-cont").append(`<p>Mi sitio web: <span id="website-url">https://"${data.blog}"</span></p>`)
+    }
 });
 
 $.ajax(
