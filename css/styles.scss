@@ -1,63 +1,122 @@
 body {
     margin: 0;
-    font-family: opensans;
-
+    font-family: helvetica;
 }
 header {
     background-color: rgb(160, 0, 27);
     height: 40vh;
-    position: relative;
-    .name {
-        position: absolute;
-        left: 10%;
-        top: 6%;
-        color: white;
-        h1{
-            margin: 5px 5px 0 0 ;
-            font-weight: 300;
-        }
-        p {
-            margin: 5px 5px 0 0 ;
-        }
-        
-    }
-}
-.profile {
-    height: 50vh;
-    width: 80%;
+    width: 100%;
+    margin: 0;
     position: absolute;
-    background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    left: 10%;
-    top: 40%;
-    display: flex;
-    .photo {
-        width: 35%;
-        height: 100%;
-        img {
-           width: 98%; 
-        }
-    }
-    .info{
-        width: 65%;
-        hr {
-            border: 0;
-            height: 1px;
-            background: #333;
-            background-image: linear-gradient(to right, #ccc, #333, #ccc);
-        }
+    top: 0;
+}
+.header__name-cont--big {
+    display: none;
+    h1 {
+        margin: 0;
+        padding: 20px;
+        color: white;
+        text-align: center;
     }
 }
-.container-dos {
-    width: 80%;
-    margin-top: 35vh;
-    margin-left: 10%;
+.header__name-cont--small {
+    h2 {
+        text-align: center;
+    }
+}
+.header__profile-info-cont {
+    width: 90vw;
+    margin: 0px auto;
+    padding: 0;
     background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
 }
-hr.style-four {
-    height: 12px;
-    border: 0;
-    box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+.profile-info__avatar {
+    width: 50%;
+    margin: 20px auto;
+    position: relative;
+    img {
+        width: 100%;
+        margin: 30px auto 10px auto;
+        border-radius: 50%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+    }
 }
+
+/* 
+    <header>
+        <div class="header__name-cont">
+            <h1>María Núñez</h1>
+        </div>
+        <div class="header__profile-info-cont" >
+            <div class="profile-info__avatar">
+                <img src="https://avatars1.githubusercontent.com/u/39781996?v=4" alt="github-account-avatar">
+            </div>
+            <div class="profile-info__bio-cont">
+                <h2>Esta es una muestra de mi Github</h2>
+                <h3></h3>
+                <hr>
+                <p>Website: <span id="website-url"></span></p>
+            </div>
+        </div>
+    </header>
+*/
+
+// header {
+//     background-color: rgb(160, 0, 27);
+//     height: 40vh;
+//     position: relative;
+//     .name {
+//         position: absolute;
+//         left: 10%;
+//         top: 6%;
+//         color: white;
+//         h1{
+//             margin: 5px 5px 0 0 ;
+//             font-weight: 300;
+//         }
+//         p {
+//             margin: 5px 5px 0 0 ;
+//         }
+        
+//     }
+// }
+// .profile {
+//     height: 50vh;
+//     width: 80%;
+//     position: absolute;
+//     background-color: white;
+//     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+//     left: 10%;
+//     top: 40%;
+//     display: flex;
+//     .photo {
+//         width: 35%;
+//         height: 100%;
+//         img {
+//            width: 98%; 
+//         }
+//     }
+//     .info{
+//         width: 65%;
+//         hr {
+//             border: 0;
+//             height: 1px;
+//             background: #333;
+//             background-image: linear-gradient(to right, #ccc, #333, #ccc);
+//         }
+//     }
+// }
+// .container-dos {
+//     width: 80%;
+//     margin-top: 35vh;
+//     margin-left: 10%;
+//     background-color: white;
+//     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+//     text-align: center;
+// }
+// hr.style-four {
+//     height: 12px;
+//     border: 0;
+//     box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+// }

@@ -1,67 +1,69 @@
+@charset "UTF-8";
 body {
   margin: 0;
-  font-family: opensans;
+  font-family: helvetica;
 }
 
 header {
   background-color: #a0001b;
   height: 40vh;
-  position: relative;
-}
-header .name {
+  width: 100%;
+  margin: 0;
   position: absolute;
-  left: 10%;
-  top: 6%;
+  top: 0;
+}
+
+.header__name-cont--big {
+  display: none;
+}
+.header__name-cont--big h1 {
+  margin: 0;
+  padding: 20px;
   color: white;
-}
-header .name h1 {
-  margin: 5px 5px 0 0;
-  font-weight: 300;
-}
-header .name p {
-  margin: 5px 5px 0 0;
-}
-
-.profile {
-  height: 50vh;
-  width: 80%;
-  position: absolute;
-  background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  left: 10%;
-  top: 40%;
-  display: flex;
-}
-.profile .photo {
-  width: 35%;
-  height: 100%;
-}
-.profile .photo img {
-  width: 98%;
-}
-.profile .info {
-  width: 65%;
-}
-.profile .info hr {
-  border: 0;
-  height: 1px;
-  background: #333;
-  background-image: linear-gradient(to right, #ccc, #333, #ccc);
-}
-
-.container-dos {
-  width: 80%;
-  margin-top: 35vh;
-  margin-left: 10%;
-  background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align: center;
 }
 
-hr.style-four {
-  height: 12px;
-  border: 0;
-  box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+.header__name-cont--small h2 {
+  text-align: center;
 }
+
+.header__profile-info-cont {
+  width: 90vw;
+  margin: 0px auto;
+  padding: 0;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.profile-info__avatar {
+  width: 50%;
+  margin: 20px auto;
+  position: relative;
+}
+.profile-info__avatar img {
+  width: 100%;
+  margin: 30px auto 10px auto;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* 
+    <header>
+        <div class="header__name-cont">
+            <h1>María Núñez</h1>
+        </div>
+        <div class="header__profile-info-cont" >
+            <div class="profile-info__avatar">
+                <img src="https://avatars1.githubusercontent.com/u/39781996?v=4" alt="github-account-avatar">
+            </div>
+            <div class="profile-info__bio-cont">
+                <h2>Esta es una muestra de mi Github</h2>
+                <h3></h3>
+                <hr>
+                <p>Website: <span id="website-url"></span></p>
+            </div>
+        </div>
+    </header>
+*/
 
 /*# sourceMappingURL=styles.css.map */

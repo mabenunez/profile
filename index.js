@@ -1,7 +1,7 @@
 $.ajax(
     "https://api.github.com/users/mabenunez"
   ).done(function(data) {
-    $('.photo').append(`<img src='${data.avatar_url}' />`)
+    $('.profile-info__avatar').append(`<img src='${data.avatar_url}' alt='github-account-avatar'/>`)
     $('#website').html(`https://"${data.blog}"`)
 });
 
